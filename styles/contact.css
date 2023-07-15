@@ -1,0 +1,73 @@
+main {
+  display: flex;
+}
+
+section {
+  padding: 2em;
+  width: 50%;
+}
+
+section nav {
+  display: flex;
+  margin-top: 6em;
+  gap: 1em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+#name-div {
+  display: flex;
+  gap: 2em;
+}
+
+#name-div div {
+  width: 50%;
+}
+
+input {
+  width: 100%;
+  padding: 0.5em;
+  border: 1px solid #000000;
+  background-color: #F1F1EF;
+  font-family: Aktiv-Grotesk-Light;
+}
+
+input:focus {
+  outline: none;
+}
+
+label {
+  display: block;
+}
+
+textarea {
+  width: 100%;
+  font-family: Aktiv-Grotesk-Light;
+  padding: 0.5em;
+  border: 1px solid #000000;
+  background-color: #F1F1EF;
+}
+
+textarea:focus {
+  outline:none;
+}
+
+#submit-btn {
+  text-transform: uppercase;
+  width: min-content;
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    flex-direction: column;
+  }
+
+  section {
+    width: unset;
+  }
+}
+

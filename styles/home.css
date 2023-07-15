@@ -5,9 +5,53 @@ main {
   overflow: hidden;
 }
 
+#search-section {
+  position: relative;
+}
+
 #skyline-img {
   width: 100%;
   object-fit: cover;
+}
+
+#search-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+}
+
+#search-input {
+  border: none;
+  width: max-content;
+  font-family: Aktiv-Grotesk-Light;
+  padding: 1em 4em 1em 0.75em;
+  width: 15%;
+  background-color: #ffffff;
+}
+
+#search-input:focus {
+  outline: none;
+}
+
+#search-btn {
+  border: none;
+  padding: 1em 4em;
+  background-color: #000000;
+  color: #ffffff;
+  font-family: Aktiv-Grotesk-Light;
+  transition: background-color 0.25s, color 0.25s;
+}
+
+#search-btn:hover {
+  color: #000000;
+  background-color: #ffffff;
+  cursor: pointer;
 }
 
 #looking-section {
