@@ -1,0 +1,173 @@
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 6em;
+  overflow: hidden;
+}
+
+#skyline-img {
+  width: 100%;
+  object-fit: cover;
+}
+
+#looking-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#looking-nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1em;
+  width: 100%;
+}
+
+.looking-item-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1em;
+  transition: transform 0.5s;
+}
+.looking-item-container:hover {
+  transform: scale(1.05);
+}
+
+.looking-img {
+  width: 300px;
+  height: 250px;
+  object-fit: cover;
+}
+
+#meet-tamish-section {
+  display: flex;
+  padding: 2em;
+  justify-content: flex-start;
+}
+
+#meet-left-container {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+}
+
+#meet-text-container {
+  display: flex;
+  flex-direction: column;
+  font-size: x-large;
+  width: 70%;
+  align-self: center;
+}
+
+#connect-btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+#connect-btn {
+  width: 100%;
+}
+
+#meet-img-container {
+  width: 35%;
+}
+
+#portrait-img {
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+#client-review-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+}
+
+#reviews-container {
+  display: flex;
+  gap: 1em;
+  overflow: scroll;
+  justify-self: center;
+}
+
+.review-container {
+  min-width: 25%;
+  /* If Tamish wants different heights for each reivew
+  height: fit-content;
+  */
+  background-color: #F1F1EF;
+  padding: 1em;
+  text-align: center;
+}
+
+#recent-sales-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2em;
+}
+
+#sales-container {
+  display: flex;
+  overflow: scroll;
+  gap: 1em;
+}
+
+.sale-container {
+  min-width: 25%;
+}
+
+.sale-img {
+  width: 100%;
+  object-fit: cover;
+}
+
+#team-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#team-members-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 4em;
+  width: 40%;
+}
+
+.team-member-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.member-img {
+  border-radius: 1em;
+  width: 100%;
+  max-width: 250px;
+  object-fit: cover;
+  aspect-ratio: 2 / 3;
+}
+
+.member-name {
+  margin-top: 0.75em;
+}
+
+@media screen and (max-width: 600px) {
+  #looking-nav {
+    flex-direction: column;
+  }
+
+  #meet-tamish-section {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 1em;
+  }
+}

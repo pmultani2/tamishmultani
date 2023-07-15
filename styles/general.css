@@ -1,0 +1,123 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Aktiv-Grotesk, sans-serif;
+}
+
+#sticky-header {
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+  align-items: center;
+  font-family: Aktiv-Grotesk-Light, sans-serif;
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+}
+
+#logo-container {
+  width: 8em;
+}
+
+#header-logo {
+  width: 100%;
+  object-fit: cover;
+}
+
+#header-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+  align-items: center;
+}
+
+#header-nav a:hover {
+  text-decoration: underline;
+}
+
+#header-dropdown {
+  padding: 0.5em;
+  gap: 0.5em;
+  display: none;
+  position: absolute;
+  z-index: inherit;
+  flex-direction: column;
+  background-color: #FFFFFF;
+}
+
+#drop-hover:hover {
+  cursor: pointer
+}
+
+#drop-hover:hover #header-dropdown {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-btn {
+  border: none;
+  background-color: #000000;
+  color: #FFFFFF;
+  font-family: Aktiv-Grotesk-Bold, sans-serif;
+  border-radius: 4em;
+  padding: 1em;
+}
+
+.contact-btn:hover {
+  cursor: pointer;
+  opacity: 75%;
+}
+
+footer {
+  margin-top: 6em;
+  background-color: #F1F1EF;
+  padding: 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+footer div {
+  display: flex;
+  flex-direction: column;
+}
+
+footer nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+a {
+  color: initial;
+  text-decoration: none;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.bold {
+  font-family: Aktiv-Grotesk-Bold, sans-serif;
+}
+
+.light {
+  font-family: Aktiv-Grotesk-Light, sans-serif;
+}
+
+@font-face {
+  font-family: Aktiv-Grotesk;
+  src: url(fonts/aktivgrotesk-regular.ttf);
+}
+
+@font-face {
+  font-family: Aktiv-Grotesk-Light;
+  src: url(fonts/AktivGrotesk-Light.ttf);
+}
+
+@font-face {
+  font-family: Aktiv-Grotesk-Bold;
+  src: url(fonts/AktivGrotesk-Bold.ttf);
+  font-weight: bold;
+}
