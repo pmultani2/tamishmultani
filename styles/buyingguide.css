@@ -82,7 +82,7 @@ section nav {
 
 #map-img {
   width: 100%;
-  height: min-content;
+  object-fit: cover;
 }
 
 #government-programs-section {
@@ -98,6 +98,7 @@ section nav {
 }
 
 .collapsible-btn {
+  color: #000000;
   border: 0;
   background-color: #ffffff;
   padding: 2em;
@@ -135,6 +136,81 @@ section nav {
   border-top: 1px solid #000000
 }
 
+#consider-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+#consider-section header {
+  text-align: center;
+  font-size: 2vw;
+}
+
+#comparison-div {
+  display: flex;
+  gap: 1em;
+}
+
+.compare-item-div {
+  width: 50%;
+  text-align: center;
+}
+
+.compare-img {
+  max-width: 100%;
+  object-fit: cover;
+  width: 500px;
+  height: 350px;
+}
+
+#costs-section {
+  display: flex;
+}
+
+#costs-section header {
+  font-size: 2vw;
+  width: 35%;
+}
+
+#costs-categories-div {
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#searching-section {
+  display: flex;
+  gap: 4em;
+}
+
+#searching-section > * {
+  width: 50%;
+}
+
+#searching-section header {
+  font-size: 2vw;
+}
+
+#realm-img {
+  width: 100%;
+  object-fit: cover;
+}
+
+#offer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#offer-section header {
+  font-size: 2vw;
+}
+
+#offer-section div {
+  width: 50%;
+}
+
 @media screen and (max-width: 600px) {
   #government-programs-section {
     flex-direction: column;
@@ -142,5 +218,14 @@ section nav {
 
   #government-programs-section > * {
     width: 100%;
+  }
+
+  #costs-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #costs-categories-div {
+    flex-direction: column;
   }
 }
