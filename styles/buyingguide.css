@@ -1,0 +1,146 @@
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 2em;
+}
+
+#intro-section {
+  display: flex;
+  gap: 1em;
+}
+
+#intro-section div {
+  width: 50%;
+}
+
+#large-header {
+  font-size: 8vw;
+  margin: 0;
+}
+
+#bedroom-img {
+  width: 100%;
+  object-fit: cover;
+}
+
+section nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  font-size: large;
+}
+
+#choose-realtor-section {
+  display: flex;
+  gap: 1em;
+}
+
+#choose-realtor-section div {
+  width: 50%;
+}
+
+#wooden-img {
+  max-width: 100%;
+  width: 500px;
+  object-fit: cover;
+  aspect-ratio: 1;
+  display: flex;
+  margin: 0 auto;
+}
+
+#pre-approval-section {
+  display: flex;
+  background-color: #F1F1EF;
+}
+
+#pre-approval-section * {
+  width: 50%;
+}
+
+#pre-approval-section h1 {
+  font-size: 4vw;
+}
+
+#preferences-section {
+  display: flex;
+}
+
+#preferences-section div {
+  width: 50%;
+}
+
+#preferences-section h1 {
+  font-size: 4vw;
+  width: 50%;
+}
+
+#map-section {
+  padding: 0;
+}
+
+#map-img {
+  width: 100%;
+  height: min-content;
+}
+
+#government-programs-section {
+  display: flex;
+}
+
+#government-programs-section > * {
+  width: 50%;
+}
+
+#government-programs-section h1 {
+  font-size: 3vw;
+}
+
+.collapsible-btn {
+  border: 0;
+  background-color: #ffffff;
+  padding: 2em;
+  font-size: large;
+  width: 100%;
+  text-align: left;
+  border-top: 1px solid #000000;
+}
+
+.collapsible-btn:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.collapsible-btn:hover {
+  cursor: pointer;
+}
+
+.collapsible-content {
+  background-color: white;
+  padding: 0 4em;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.bottom-collapsible {
+  border-top: 1px solid #000000
+}
+
+@media screen and (max-width: 600px) {
+  #government-programs-section {
+    flex-direction: column;
+  }
+
+  #government-programs-section > * {
+    width: 100%;
+  }
+}
