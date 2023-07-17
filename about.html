@@ -8,6 +8,7 @@
     <link rel="icon" type="image/x-icon" href="images/favicon_package_v0.16/favicon-32x32.png">
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/collapsible.css">
   </head>
   <body>
     <header id="sticky-header">
@@ -20,12 +21,12 @@
         <a href="index.html">Home</a>
         <a href="search.html">Search</a>
         <div id="drop-hover">
-          <a>More</a>
+          <a class="underline">More</a>
           <nav id="header-dropdown">
             <a href="buyingguide.html">Buying Guide</a>
             <a href="sellingguide.html">Selling Guide</a>
             <a href="rentingguide.html">Renting Guide</a>
-            <a href="about.html">About</a>
+            <a href="about.html" class="underline">About</a>
           </nav>
         </div>
         <a href="contact.html">
@@ -57,10 +58,31 @@
           <h1>PSR Brokerage</h1>
         </header>
       </section>
-      <section>
+      <section id="values-section">
         <header class="bold">
-          <h1></h1>
+          <h1>Values</h1>
         </header>
+        <div id="collapsibles-container">
+          <div class="collapsible">
+            <button class="collapsible-btn">Integrity</button>
+            <div class="collapsible-content light">
+              <p>Integrity is the cornerstone of success in real estate. It's about being honest, transparent, and always putting the best interests of your clients first. As a real estate professional, I take pride in my commitment to these values. I believe that building trust and earning the confidence of my clients is the key to providing exceptional service. Whether you're buying, selling, or renting, I will always be truthful and upfront, ensuring that you are fully informed and making the right decisions for your future. With me, you can expect a personalized and supportive experience, grounded in the principles of integrity and professionalism</p>
+            </div>
+          </div>
+          <div class="collapsible">
+            <button class="collapsible-btn">Efficiency</button>
+            <div class="collapsible-content light">
+              <p>Efficiency is a critical value in real estate. In today's fast-paced market, it's important to work with an agent who can move quickly and effectively to get results. That's where I come in. With a focus on streamlining processes and utilizing cutting-edge technology, I bring a level of efficiency to the table that sets me apart. I understand that time is of the essence, and I am committed to working efficiently to help you achieve your real estate goals as quickly and smoothly as possible.</p>
+            </div>
+          </div>
+          <div class="collapsible">
+            <button class="collapsible-btn">Technology</button>
+            <div class="collapsible-content light">
+              <p>I understand that in today's fast-paced real estate market, technology is a game-changer, and I am always seeking new ways to leverage it to help my clients achieve their goals. Whether it's utilizing virtual tours to showcase properties, utilizing data analytics to inform buying and selling decisions, or streamlining communication with cutting-edge tools, I am committed to utilizing technology to make your real estate journey as efficient, effective, and stress-free as possible.</p>
+            </div>
+          </div>
+          <div class="bottom-collapsible"></div>
+        </div>
       </section>
     </main>
     <footer>
@@ -96,5 +118,6 @@
         </nav>
       </div>
     </footer>
+    <script src="scripts/collapsible.js"></script>
   </body>
 </html>

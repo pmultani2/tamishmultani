@@ -8,6 +8,14 @@
   width: 50%;
 }
 
+#values-section {
+  padding: 2em;
+}
+
+#values-section header {
+  font-size: 32px;
+}
+
 @media screen and (max-width: 800px) {
   .split {
     flex-direction: column;
