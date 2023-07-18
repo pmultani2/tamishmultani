@@ -1,6 +1,9 @@
-body {
+html, body {
   padding: 0;
   margin: 0;
+}
+
+body {
   font-family: Aktiv-Grotesk, sans-serif;
 }
 
@@ -32,8 +35,30 @@ body {
   align-items: center;
 }
 
-#header-nav a:hover {
+#header-nav a:hover, #overlay a:hover {
   text-decoration: underline;
+}
+
+#overlay {
+  height: 0;
+  width: 100%;
+  overflow-y: hidden;
+  position: fixed;
+  z-index: 999;
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: Aktiv-Grotesk-Light;
+  display: flex;
+  justify-content: center;
+  transition: 0.5s;
+}
+
+#overlay nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 75%;
 }
 
 #header-dropdown {
@@ -67,6 +92,14 @@ body {
 .contact-btn:hover {
   cursor: pointer;
   opacity: 75%;
+}
+
+#hamburger {
+  display: none;
+}
+
+#hamburger:hover {
+  cursor: pointer;
 }
 
 footer {
@@ -120,6 +153,15 @@ input {
 }
 
 @media screen and (max-width: 800px) {
+  #header-nav {
+    display: none;
+  }
+
+  #hamburger {
+    float: right;
+    display: block;
+  }
+
   footer {
     flex-direction: column;
   }

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/buyingguide.css">
     <link rel="stylesheet" href="styles/collapsible.css">
+    <script src="https://kit.fontawesome.com/9ecfa21df9.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header id="sticky-header">
@@ -33,7 +34,23 @@
           <button class="contact-btn">CONTACT</button>
         </a>
       </nav>
+      <button id="hamburger" style="border: none; background-color: transparent;">
+        <i class="fa-solid fa-bars fa-xl" style="color: #000000;"></i>
+      </button>
     </header>
+    <div id="overlay">
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="search.html">Search</a>
+        <a href="buyingguide.html" class="underline">Buying Guide</a>
+        <a href="sellingguide.html">Selling Guide</a>
+        <a href="rentingguide.html">Renting Guide</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">
+          <button class="contact-btn">CONTACT</button>
+        </a>
+      </nav>
+    </div>
     <main>
       <section id="intro-section">
         <div>
@@ -269,5 +286,6 @@
       </div>
     </footer>
     <script src="scripts/collapsible.js"></script>
+    <script src="scripts/hamburger.js"></script>
   </body>
 </html>

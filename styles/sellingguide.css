@@ -1,6 +1,6 @@
 main {
   padding: 2em;
-  display: flex
+  display: flex;
 }
 
 #left, #right {

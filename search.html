@@ -7,6 +7,7 @@
     <title>Search - Tamish Multani Real Estate</title>
     <link rel="icon" type="image/x-icon" href="images/favicon_package_v0.16/favicon-32x32.png">
     <link rel="stylesheet" href="styles/general.css">
+    <script src="https://kit.fontawesome.com/9ecfa21df9.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header id="sticky-header">
@@ -31,7 +32,23 @@
           <button class="contact-btn">CONTACT</button>
         </a>
       </nav>
+      <button id="hamburger" style="border: none; background-color: transparent;">
+        <i class="fa-solid fa-bars fa-xl" style="color: #000000;"></i>
+      </button>
     </header>
+    <div id="overlay">
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="search.html" class="underline">Search</a>
+        <a href="buyingguide.html">Buying Guide</a>
+        <a href="sellingguide.html">Selling Guide</a>
+        <a href="rentingguide.html">Renting Guide</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">
+          <button class="contact-btn">CONTACT</button>
+        </a>
+      </nav>
+    </div>
     <main>
       <iframe src="https://www.torontomls.net/api/Idx.asp?api_key=ec0d8398a79939808fa5343a59aeea8d" frameborder="0" width="100%" height="1200" scrolling="no"></iframe>
     </main>
@@ -70,5 +87,6 @@
         </div>
       </div>
     </footer>
+    <script src="scripts/hamburger.js"></script>
   </body>
 </html>
