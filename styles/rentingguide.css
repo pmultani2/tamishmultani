@@ -1,0 +1,83 @@
+#main-header {
+  text-align: center;
+}
+
+#main-header h1 {
+  font-size: 64px;
+}
+
+#gooderham-img, #realm-img {
+  width: 100%;
+  object-fit: cover;
+}
+
+#table-of-contents-section {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#couch-img {
+  max-width: 100%;
+  width: 500px;
+  object-fit: cover;
+  margin-top: 2em;
+}
+
+.zig-zag {
+  display: flex;
+  padding: 2em;
+  gap: 2em;
+}
+
+.zig-zag > * {
+  width: 50%;
+}
+
+#requirements-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.5em;
+}
+
+.requirement-div {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.requirement-div * {
+  margin: 0;
+  padding: 0;
+}
+
+#budget ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25em;
+}
+
+@media screen and (max-width: 800px) {
+  .zig-zag {
+    flex-direction: column;
+    gap: initial;
+  }
+  
+  .zig-zag > * {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #table-of-contents-section {
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  #couch-img {
+    width: 100%;
+  }
+}
