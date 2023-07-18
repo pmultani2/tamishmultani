@@ -42,7 +42,7 @@ body {
 #overlay {
   height: 0;
   width: 100%;
-  overflow-y: hidden;
+  overflow: hidden;
   position: fixed;
   z-index: 999;
   background-color: #FFFFFF;
@@ -59,6 +59,7 @@ body {
   align-items: center;
   justify-content: space-between;
   height: 75%;
+  padding: 2em;
 }
 
 #header-dropdown {
