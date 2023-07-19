@@ -54,10 +54,53 @@
   padding: 0;
 }
 
+#mural-section {
+  padding: 2em;
+}
+
+#overlap-wrapper {
+  display: flex;
+}
+
+#overlap-img-div {
+  width: 65%;
+}
+
+#mural-img {
+  width: 100%;
+  object-fit: cover;
+}
+
+#overlap-text-div {
+  background-color: #F1F1EF;
+  padding: 2em;
+  width: 35%;
+  margin-left: -100px;
+  height: min-content;
+  align-self: center;
+}
+
 #budget ul {
   display: flex;
   flex-direction: column;
   gap: 1.25em;
+}
+
+@media screen and (max-width: 900px) {
+  #overlap-wrapper {
+    flex-direction: column;
+  }
+
+  #overlap-img-div {
+    width: 75%;
+  }
+
+  #overlap-text-div {
+    width: 60%;
+    margin-left: unset;
+    margin-top: -50px;
+    align-self: flex-end;
+  }
 }
 
 @media screen and (max-width: 800px) {
