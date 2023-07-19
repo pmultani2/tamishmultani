@@ -40,8 +40,10 @@ body {
 }
 
 #overlay {
-  height: 0;
+  height: 100%;
   width: 100%;
+  opacity: 0;
+  visibility: hidden;
   overflow: hidden;
   position: fixed;
   z-index: 999;
@@ -60,6 +62,7 @@ body {
   justify-content: space-between;
   height: 75%;
   padding: 2em;
+  transition: transform 0.5s;
 }
 
 #header-dropdown {
