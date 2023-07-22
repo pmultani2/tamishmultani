@@ -4,6 +4,7 @@
   justify-content: center;
   gap: 2em;
   align-items: center;
+  position: relative;
 }
 
 .carousel-elements-wrapper {
@@ -32,6 +33,20 @@
   min-width: 100%;
   max-width: 100%;
   object-fit: cover;
+}
+
+.button-div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  z-index: 998;
+}
+
+.button-div button {
+  opacity: 50%;
+  margin: 0 2em;
 }
 
 @media screen and (max-width: 800px) {

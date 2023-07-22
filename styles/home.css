@@ -131,6 +131,10 @@
   padding: 2em;
 }
 
+#client-review-section header h1 {
+  text-align: center;
+}
+
 .carousel-elements-wrapper {
   width: 100%;
   align-items: flex-start;
