@@ -86,6 +86,10 @@
   gap: 1.25em;
 }
 
+#brochure-section {
+  padding: 2em;
+}
+
 @media screen and (max-width: 900px) {
   #overlap-wrapper {
     flex-direction: column;

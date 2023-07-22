@@ -2,6 +2,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.heading {
+  font-size: 32px;
+}
+
 section {
   padding: 2em;
 }
@@ -59,10 +63,6 @@ section nav {
   width: 50%;
 }
 
-#pre-approval-section h1 {
-  font-size: 4vw;
-}
-
 #preferences-section {
   display: flex;
 }
@@ -72,7 +72,6 @@ section nav {
 }
 
 #preferences-section h1 {
-  font-size: 4vw;
   width: 50%;
 }
 
@@ -93,10 +92,6 @@ section nav {
   width: 50%;
 }
 
-#government-programs-section h1 {
-  font-size: 3vw;
-}
-
 #consider-section {
   display: flex;
   flex-direction: column;
@@ -105,7 +100,6 @@ section nav {
 
 #consider-section header {
   text-align: center;
-  font-size: 2vw;
 }
 
 #comparison-div {
@@ -130,7 +124,6 @@ section nav {
 }
 
 #costs-section header {
-  font-size: 2vw;
   width: 35%;
 }
 
@@ -149,10 +142,6 @@ section nav {
   width: 50%;
 }
 
-#searching-section header {
-  font-size: 2vw;
-}
-
 #realm-img {
   width: 100%;
   object-fit: cover;
@@ -164,12 +153,78 @@ section nav {
   align-items: center;
 }
 
-#offer-section header {
-  font-size: 2vw;
-}
-
 #offer-section div {
   width: 50%;
+}
+
+@media screen and (max-width: 800px) {
+  #intro-section {
+    flex-direction: column;
+  }
+
+  #intro-section div {
+    width: 100%;
+  }
+
+  #intro-section header {
+    text-align: center;
+  }
+
+  #choose-realtor-section {
+    flex-direction: column;
+  }
+
+  #choose-realtor-section div {
+    width: 100%;
+  }
+
+  #wooden-img {
+    width: 100%;
+    aspect-ratio: unset;
+  }
+
+  #pre-approval-section {
+    flex-direction: column;
+  }
+  
+  #pre-approval-section * {
+    width: 100%;
+  }
+  
+  #preferences-section {
+    flex-direction: column;
+  }
+  
+  #preferences-section div {
+    width: 100%;
+  }
+
+  #costs-section {
+    flex-direction: column;
+    align-items: center; 
+  }
+
+  #costs-section header {
+    width: 100%;
+  }
+
+  #costs-categories-div {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #searching-section {
+    flex-direction: column-reverse;
+    gap: unset;
+  }
+  
+  #searching-section > * {
+    width: 100%;
+  }
+  
+  #offer-section div {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -181,12 +236,15 @@ section nav {
     width: 100%;
   }
 
-  #costs-section {
+  #comparison-div {
     flex-direction: column;
-    align-items: center;
   }
 
-  #costs-categories-div {
-    flex-direction: column;
+  .compare-item-div {
+    width: 100%;
+  }
+
+  .compare-img {
+    width: 100%;
   }
 }

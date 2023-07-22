@@ -1,0 +1,41 @@
+.carousel {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  align-items: center;
+}
+
+.carousel-elements-wrapper {
+  width: 50%;
+  display: flex;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  align-items: center;
+}
+
+.carousel-btn {
+  border: none;
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  transition: opacity 0.25s;
+}
+
+.carousel-btn:hover {
+  cursor: pointer;
+  opacity: 80%;
+}
+
+.carousel-element {
+  min-width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 800px) {
+  .carousel-elements-wrapper {
+    width: 100%;
+  }
+}
