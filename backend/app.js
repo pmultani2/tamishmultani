@@ -1,5 +1,7 @@
 const http = require('http');
 
+const port = process.env.PORT || 5000;
+
 const server = http.createServer((request, response) => {
   const { headers, method, url } = request;
 
@@ -27,6 +29,6 @@ const server = http.createServer((request, response) => {
     response.end();
   }
   
-}).listen(5500, () => {
-  console.log('server listening on port 5500');
+}).listen(port, () => {
+  console.log('server listening on port: ' + port);
 });
