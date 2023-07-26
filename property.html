@@ -7,7 +7,7 @@
     <title>Search - Tamish Multani Real Estate</title>
     <link rel="icon" type="image/x-icon" href="images/favicon_package_v0.16/favicon-32x32.png">
     <link rel="stylesheet" href="styles/general.css">
-    <link rel="stylesheet" href="styles/search.css">
+    <link rel="stylesheet" href="styles/property.css">
     <script src="https://kit.fontawesome.com/9ecfa21df9.js" crossorigin="anonymous"></script>
   </head>
   <body>
@@ -51,30 +51,15 @@
       </nav>
     </div>
     <main>
-      <section id="title">
-        <header>
-          <h1 class="bold">Available Listings</h1>
-        </header>
-      </section>
-      <section id="search-parameters">
-        <div id="search-parameters-div">
-          <div id="search-input-div">
-            <label for="search-input">Search</label>
-            <input id="search-input" placeholder="Enter Location" type="search" autocomplete="off">
-          </div>
-          <div>
-            <label for="price-input">Price</label>
-            <input id="price-input" type="range" min="1" max="10">
-          </div>
-          <div>
-            <label for="area-input">Living Area</label>
-            <input id="area-input" type="range" min="500" max="10000">
-          </div>
+      <section id="property">
+        <div id="property-img-div">
+          <img id="property-img">
         </div>
-      </section>
-      <section id="results">
-        <div id="results-grid">
-          
+        <div id="property-info-div" class="light">
+          <h1 id="property-address"></h1>
+          <p id="property-bed-bath"></p>
+          <p id="property-price" class="bold"></p>
+          <div id="property-description"></div>
         </div>
       </section>
     </main>
@@ -114,6 +99,6 @@
       </div>
     </footer>
     <script src="scripts/hamburger.js"></script>
-    <script src="scripts/api.js"></script>
+    <script src="scripts/property.js"></script>
   </body>
 </html>

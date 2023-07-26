@@ -1,0 +1,33 @@
+#property {
+  display: flex;
+  background-color: #F1F1EF;
+}
+
+#property-img-div, #property-info-div {
+  width: 50%;
+}
+
+#property-info-div {
+  padding: 2em;
+}
+
+#property-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+@media screen and (max-width: 800px) {
+  #property {
+    flex-direction: column;
+  }
+
+  #property-img-div {
+    width: 100%;
+  }
+
+  #property-info-div {
+    width: calc(100% - 4em);
+  }
+}
